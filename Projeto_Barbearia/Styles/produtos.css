@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+
+.container {
+    width: 940px;
+    position: relative;
+    margin: auto;
+}
+
+header nav {
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* container dos servicos */
+.servicos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 3rem;
+    height: 60vh;
+    border: solid blue 1px;
+}
+
+.servicos li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 22px;
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: solid red 1px;
+}
+
+.servicos .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.servicos .descricao{
+    font-size: 14px;
+}
+
+.servicos .preco {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
