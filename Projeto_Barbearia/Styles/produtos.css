@@ -2,11 +2,12 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #331b1b;
 }
 
 header {
-    background-color: #bbbbbb;
-    padding: 20px 0;
+    background-color: #e3c5ad;
+    border-radius: 0 0 255px 255px;
 }
 
 .container {
@@ -15,9 +16,13 @@ header {
     margin: auto;
 }
 
+.container .logo{
+    width: 75px;
+}
+
 header nav {
     position: absolute;
-    bottom: 50%;
+    bottom: 45%;
     right: 0;
 }
 
@@ -27,11 +32,15 @@ header nav li {
 }
 
 header nav ul a {
-    text-transform: uppercase;
-    color: #000;
+    color: #331b1b;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
+    transition: .2s ease-in;
+}
+
+header nav ul a:hover {
+    color: #de7019;
 }
 
 /* container dos servicos */
@@ -40,11 +49,12 @@ header nav ul a {
     margin: 0 auto;
     padding: 3rem;
     height: 60vh;
-    border: solid blue 1px;
 }
 
 .servicos li{
     display: inline-block;
+    position: relative;
+
     text-align: center;
     margin-left: 22px;
     width: 30%;
@@ -52,7 +62,19 @@ header nav ul a {
     padding: 10px;
     vertical-align: top;
     box-sizing: border-box;
-    border: solid red 1px;
+    color: #331b1b;
+    background-color: #e3c5ad;
+    border-radius: 12px;
+    transition: .3s ease-in;
+}
+
+.servicos li:hover {
+    background-color: #e9be99;
+}
+
+.servicos li img {
+    margin-top: 20px;
+    width: 200px;
 }
 
 .servicos .title {
@@ -65,7 +87,29 @@ header nav ul a {
 }
 
 .servicos .preco {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom: 0;
+    
+    width: 90%;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 15px;
+    background-color: #de7019;
+    color: #e3c5ad;
+    padding: 10px 0;
+    border-radius: 7px;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.servicos .preco:hover {
+    background-color: #cc5800;
+}
+
+/*footer*/
+
+footer {
+    background-color: #e3c5ad;
+    padding: 20px 0;
+    text-align: center;
 }
